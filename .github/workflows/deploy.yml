@@ -21,7 +21,12 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Detect package manager
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2
+        with:
+          node-version: "18.17.0"
+
+      - name: "Detect package manager"
         id: detect-package-manager
         run: |
           if [ -f "${{ github.workspace }}/pnpm-lock.yaml" ]; then
@@ -44,30 +49,30 @@ jobs:
             exit 1
           fi
 
-      - name: Install pnpm
+      - name: "Install pnpm"
         if: steps.detect-package-manager.outputs.manager == 'pnpm'
         run: npm install -g pnpm
 
-      - name: Install yarn
+      - name: "Install yarn"
         if: steps.detect-package-manager.outputs.manager == 'yarn'
         run: npm install -g yarn
 
-      - name: Setup Node
+      - name: "Setup Node"
         uses: actions/setup-node@v3
         with:
           node-version: "16"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
 
-      - name: Setup Pages
+      - name: "Setup Pages"
         uses: actions/configure-pages@v2
 
-      - name: Install dependencies
+      - name: "Install dependencies"
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
-      - name: Build with Vite
+      - name: "Build with Vite"
         run: ${{ steps.detect-package-manager.outputs.manager }} run build
 
-      - name: Upload artifact
+      - name: "Upload artifact"
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./dist
