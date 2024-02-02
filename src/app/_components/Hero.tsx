@@ -24,10 +24,12 @@ function Hero() {
         muted
         playsInline
         onEnded={playSecondVideo}
-        style={{ display: showFirstVideo ? "block" : "none" }}
+        style={{
+          display: showFirstVideo ? "block" : "none",
+        }}
       >
         <source
-          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1706818312/name-animation.mp4"
+          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1706901466/name-animation.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -35,9 +37,13 @@ function Hero() {
       <video
         id="name-animation-end"
         width="100%"
-        autoPlay
+        height="100%"
+        muted
+        playsInline
         loop
-        style={{ display: showSecondVideo ? "block" : "none" }}
+        style={{
+          display: showSecondVideo ? "block" : "none",
+        }}
       >
         <source
           src="https://res.cloudinary.com/daxlv1ing/video/upload/v1706823739/long-name-animation-end.mp4"
