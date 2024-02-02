@@ -20,9 +20,9 @@ function Hero() {
         id="name-animation"
         width="100%"
         height="100%"
-        autoPlay
         muted
         playsInline
+        autoPlay
         onEnded={playSecondVideo}
         style={{
           display: showFirstVideo ? "block" : "none",
