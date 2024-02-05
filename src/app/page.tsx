@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Hero from "./_components/Hero";
 import Work from "./_components/Work";
+import Experiences from "./_components/Experiences";
 
 export const metadata: Metadata = {
   title: "Sean Pak's Portfolio",
@@ -16,6 +17,7 @@ export default function Home() {
       <Work />
 
       {/* Experience Overview #1 */}
+      <Experiences />
 
       {/* Experience Overview #N */}
 

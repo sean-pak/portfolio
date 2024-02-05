@@ -19,8 +19,8 @@ body {
 }
 
 .margins {
-  margin-left: 8rem;
-  margin-right: 8rem;
+  margin-left: 16rem;
+  margin-right: 16rem;
 }
 
 .small-title {
@@ -47,11 +47,26 @@ body {
 }
 
 .large-title-static {
-  color: #dcb679;
   font-family: Source Sans Pro;
   font-size: 4.2rem;
   font-style: normal;
   font-weight: 800;
+  line-height: normal;
+}
+
+.body-text {
+  font-family: Source Sans Pro;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.small-text {
+  font-family: Source Sans Pro;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 100;
   line-height: normal;
 }
 
