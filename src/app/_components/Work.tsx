@@ -3,7 +3,7 @@ import CompanyName from "./company-name";
 
 function Work() {
   return (
-    <div className="margins h-[40rem]">
+    <div className="margins h-[40rem] scroll-snap-child pt-[4rem] translate-y-[-4rem]">
       <div className="small-title">Work</div>
       <div className="flex flex-col">
         <CompanyName name={"EdDen"} color={"#4B6A46"} />

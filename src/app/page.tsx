@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div>
+    <div className="scroll-snap-container">
       {/* Hero */}
       <Hero />
 

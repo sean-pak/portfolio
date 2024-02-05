@@ -2,7 +2,7 @@ import Experience from "./experience";
 
 const Experiences = () => {
   return (
-    <div className="pt-[5rem]">
+    <div className="pt-[5rem] scroll-snap-child">
       <Experience
         title={"Head of Design · Full-Stack Developer"}
         dates={"July 2023 - Present"}

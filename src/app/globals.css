@@ -70,6 +70,16 @@ body {
   line-height: normal;
 }
 
+.scroll-snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.scroll-snap-child {
+  scroll-snap-align: start;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

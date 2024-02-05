@@ -15,7 +15,7 @@ function Hero() {
   };
 
   return (
-    <div>
+    <div className="scroll-snap-child">
       <video
         id="name-animation"
         width="100%"
