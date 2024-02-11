@@ -29,7 +29,7 @@ function Hero() {
         }}
       >
         <source
-          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1707615515/portfolio-assets/Name-Animation.mp4"
+          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1707688999/portfolio-assets/Name-Animation.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
