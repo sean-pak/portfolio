@@ -49,8 +49,8 @@ function Hero() {
           src="https://res.cloudinary.com/daxlv1ing/video/upload/v1707615846/portfolio-assets/Name-Animation-Loop.mp4"
           type="video/mp4"
         />
+        Your browser does not support the video tag.
       </video>
-      Your browser does not support the video tag.
     </div>
   );
 }
