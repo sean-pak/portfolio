@@ -1,8 +1,32 @@
+"use client";
+import React, { useEffect, useState } from "react";
 import Experience from "./experience";
+import Navigation from "./ui/navigation";
 
 const Experiences = () => {
+  const [showNavigation, setShowNavigation] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const y = window.scrollY;
+      if (y >= 200) {
+        console.log("show");
+        setShowNavigation(true);
+      } else {
+        setShowNavigation(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="pt-[5rem] scroll-snap-child">
+      {showNavigation && <Navigation />}
       <Experience
         elementId="edden"
         title={"Head of Design · Full-Stack Developer"}

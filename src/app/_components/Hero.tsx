@@ -29,7 +29,7 @@ function Hero() {
         }}
       >
         <source
-          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1706901466/name-animation.mp4"
+          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1707615515/portfolio-assets/Name-Animation.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -46,10 +46,11 @@ function Hero() {
         }}
       >
         <source
-          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1706823739/long-name-animation-end.mp4"
+          src="https://res.cloudinary.com/daxlv1ing/video/upload/v1707615846/portfolio-assets/Name-Animation-Loop.mp4"
           type="video/mp4"
         />
       </video>
+      Your browser does not support the video tag.
     </div>
   );
 }
